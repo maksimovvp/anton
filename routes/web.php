@@ -17,4 +17,4 @@ Route::get('/', function () {
 
 Route::get('users', 'UserController@getAll')->name('allUsers');
 Route::get('tasks', 'TaskController@getAll')->name('allTasks');
-Route::get('tasks/user-{id}', 'TaskController@userTasks')->name('userTasks');
+Route::get('tasks/user-{id}', 'UserTaskController@userTasks')->name('userTasks');
